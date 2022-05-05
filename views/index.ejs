@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bot Discord</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/web/css/estils.css">
+  </head>
+  <body>
+    <div class="contenedor container">
+      <br>
+      <a href="/preguntas/anadir" class="btn btn-primary">Crear</a>
+      <table class="tablaIndex table table-striped">
+        <thead>
+          <tr>
+            <td><b>Preguntas</b></td>
+            <td><b>Imagen</b></td>
+            <td><b>Respuesta Correcta</b></td>
+            <td><b>Respuesta Incorrecta 1</b></td>
+            <td><b>Respuesta Incorrecta 2</b></td>
+            <td><b>Respuesta Incorrecta 3</b></td>
+            <td colspan="2"><b>Action</b></td>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(var i=0; i < preguntas.length; i++) { %>
+          <tr>
+            <td><%= preguntas[i].pregunta %></td>
+            <td><%= preguntas[i].imagen %></td>
+            <td><%= preguntas[i].respuestas[0] %></td>
+            <td><%= preguntas[i].respuestas[1] %></td>
+            <td><%= preguntas[i].respuestas[2] %></td>
+            <td><%= preguntas[i].respuestas[3] %></td>
+            <td><a href="/preguntas/editar/<%= preguntas[i]._id %>" class="btn btn-primary">Editar</a></td>
+            <td><a href="/preguntas/eliminar/<%= preguntas[i]._id %>" class="btn btn-danger">Eliminar</a></td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

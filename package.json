@@ -1,0 +1,30 @@
+{
+  "name": "projecte-final-grup-mario-jordi-i-dani",
+  "version": "1.0.0",
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7315624&assignment_repo_type=AssignmentRepo)\r # transversals\r Esquema mínim de carpetes pels projectes transversals",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inspedralbes/projecte-final-grup-mario-jordi-i-dani.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inspedralbes/projecte-final-grup-mario-jordi-i-dani/issues"
+  },
+  "homepage": "https://github.com/inspedralbes/projecte-final-grup-mario-jordi-i-dani#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
