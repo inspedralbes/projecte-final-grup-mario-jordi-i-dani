@@ -1,0 +1,25 @@
+body{
+    background-color: #5865f2;
+    color: white;
+}
+nav{
+    background-color: #4752C4;
+    padding-top: 10px;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    background-color: #3C45A5;
+    color: white;
+}
+.nav-link:focus{
+    background-color: #3C45A5;
+    color: white;
+}
+html{
+    overflow-x: hidden;
+}
+.breadcrumb-item{
+    color: white;
+}
