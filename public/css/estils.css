@@ -20,6 +20,6 @@ nav{
 html{
     overflow-x: hidden;
 }
-.breadcrumb-item{
-    color: white;
+.bc-item{
+    color: white !important;
 }
