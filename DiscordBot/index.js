@@ -101,7 +101,7 @@ client.on("messageCreate", async function(message) {
                 
                 case '1️⃣':
                     if(respuesta1 === respuestaCorrecta)
-                        message.channel.send("Bien 1")
+                        message.channel.send(`Bien 1  ${timeTaken}`)
                     else{
                         message.channel.send("Mal")
                     }
@@ -109,21 +109,21 @@ client.on("messageCreate", async function(message) {
                     break;
                 case '2️⃣':
                     if(respuesta2 === respuestaCorrecta)
-                        message.channel.send("Bien 2")
+                        message.channel.send(`Bien 2  ${timeTaken}`)
                     else{
                         message.channel.send("Mal")
                     }
                     break;
                 case '3️⃣':
                     if(respuesta3 === respuestaCorrecta)
-                        message.channel.send("Bien 3")
+                        message.channel.send(`Bien 3  ${timeTaken}`)
                     else{
                         message.channel.send("Mal")
                     }
                     break;
                 case '4️⃣':
                     if(respuesta4 === respuestaCorrecta)
-                        message.channel.send("Bien 4")
+                        message.channel.send(`Bien 4  ${timeTaken}`)
                     else{
                         message.channel.send("Mal")
                     }
