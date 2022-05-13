@@ -107,23 +107,23 @@ client.on("messageCreate", async function(message) {
                     break;
                 case '2️⃣':
                     if(respuesta2 === respuestaCorrecta)
-                        message.channel.send(`Respuesta 2 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
+                        message.channel.send(`Respuesta 2 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
                     else{
-                        message.channel.send(`Respuesta 2 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
+                        message.channel.send(`Respuesta 2 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
                     }
                     break;
                 case '3️⃣':
                     if(respuesta3 === respuestaCorrecta)
-                        message.channel.send(`Respuesta 3 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
+                        message.channel.send(`Respuesta 3 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
                     else{
-                        message.channel.send(`Respuesta 3 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
+                        message.channel.send(`Respuesta 3 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
                     }
                     break;
                 case '4️⃣':
                     if(respuesta4 === respuestaCorrecta)
-                        message.channel.send(`Respuesta 4 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
+                        message.channel.send(`Respuesta 4 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
                     else{
-                        message.channel.send(`Respuesta 4 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
+                        message.channel.send(`Respuesta 4 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
                     }
                     break;
             }
