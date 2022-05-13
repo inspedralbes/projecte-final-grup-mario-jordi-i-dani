@@ -95,37 +95,37 @@ client.on("messageCreate", async function(message) {
         const collector = sentEmbed.createReactionCollector({filter, max: 1,  time: 30000 });
         collector.on('collect', (reaction, user) => {
 
-            message.channel.send(`Collected ${reaction.emoji.name} from ${user.tag}`);
+            // message.channel.send(`Collected ${reaction.emoji.name} from ${user.tag}`);
 
             switch(reaction.emoji.name){
                 
                 case '1️⃣':
                     if(respuesta1 === respuestaCorrecta)
-                        message.channel.send(`Bien 1  ${timeTaken}`)
+                        message.channel.send(`Respuesta 1 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     else{
-                        message.channel.send("Mal")
+                        message.channel.send(`Respuesta 1 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     }
                     
                     break;
                 case '2️⃣':
                     if(respuesta2 === respuestaCorrecta)
-                        message.channel.send(`Bien 2  ${timeTaken}`)
+                        message.channel.send(`Respuesta 2 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     else{
-                        message.channel.send("Mal")
+                        message.channel.send(`Respuesta 2 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     }
                     break;
                 case '3️⃣':
                     if(respuesta3 === respuestaCorrecta)
-                        message.channel.send(`Bien 3  ${timeTaken}`)
+                        message.channel.send(`Respuesta 3 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     else{
-                        message.channel.send("Mal")
+                        message.channel.send(`Respuesta 3 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     }
                     break;
                 case '4️⃣':
                     if(respuesta4 === respuestaCorrecta)
-                        message.channel.send(`Bien 4  ${timeTaken}`)
+                        message.channel.send(`Respuesta 4 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     else{
-                        message.channel.send("Mal")
+                        message.channel.send(`Respuesta 4 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     }
                     break;
             }
