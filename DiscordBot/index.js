@@ -95,20 +95,11 @@ client.on("messageCreate", async function(message) {
         const collector = sentEmbed.createReactionCollector({filter, max: 1,  time: 30000 });
         collector.on('collect', (reaction, user) => {
 
-<<<<<<< HEAD
-=======
-            // message.channel.send(`Collected ${reaction.emoji.name} from ${user.tag}`);
-
->>>>>>> a9ea5cc9c026d3a5f1af7927d72fb16d3796f567
             switch(reaction.emoji.name){
                 
                 case '1️⃣':
                     if(respuesta1 === respuestaCorrecta)
-<<<<<<< HEAD
-                        message.channel.send(`Bien 1  ${timeTaken} ${user.tag}`)
-=======
                         message.channel.send(`Respuesta 1 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
->>>>>>> a9ea5cc9c026d3a5f1af7927d72fb16d3796f567
                     else{
                         message.channel.send(`Respuesta 1 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     }
@@ -116,33 +107,21 @@ client.on("messageCreate", async function(message) {
                     break;
                 case '2️⃣':
                     if(respuesta2 === respuestaCorrecta)
-<<<<<<< HEAD
-                        message.channel.send(`Bien 2  ${timeTaken} ${user.tag}`)
-=======
                         message.channel.send(`Respuesta 2 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
->>>>>>> a9ea5cc9c026d3a5f1af7927d72fb16d3796f567
                     else{
                         message.channel.send(`Respuesta 2 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     }
                     break;
                 case '3️⃣':
                     if(respuesta3 === respuestaCorrecta)
-<<<<<<< HEAD
-                        message.channel.send(`Bien 3  ${timeTaken} ${user.tag}`)
-=======
                         message.channel.send(`Respuesta 3 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
->>>>>>> a9ea5cc9c026d3a5f1af7927d72fb16d3796f567
                     else{
                         message.channel.send(`Respuesta 3 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     }
                     break;
                 case '4️⃣':
                     if(respuesta4 === respuestaCorrecta)
-<<<<<<< HEAD
-                        message.channel.send(`Bien 4  ${timeTaken} ${user.tag}`)
-=======
                         message.channel.send(`Respuesta 4 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
->>>>>>> a9ea5cc9c026d3a5f1af7927d72fb16d3796f567
                     else{
                         message.channel.send(`Respuesta 4 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
                     }
