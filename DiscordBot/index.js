@@ -95,13 +95,11 @@ client.on("messageCreate", async function(message) {
         const collector = sentEmbed.createReactionCollector({filter, max: 1,  time: 30000 });
         collector.on('collect', (reaction, user) => {
 
-            message.channel.send(`Collected ${reaction.emoji.name} from ${user.tag}`);
-
             switch(reaction.emoji.name){
                 
                 case '1️⃣':
                     if(respuesta1 === respuestaCorrecta)
-                        message.channel.send(`Bien 1  ${timeTaken}`)
+                        message.channel.send(`Bien 1  ${timeTaken} ${user.tag}`)
                     else{
                         message.channel.send("Mal")
                     }
@@ -109,21 +107,21 @@ client.on("messageCreate", async function(message) {
                     break;
                 case '2️⃣':
                     if(respuesta2 === respuestaCorrecta)
-                        message.channel.send(`Bien 2  ${timeTaken}`)
+                        message.channel.send(`Bien 2  ${timeTaken} ${user.tag}`)
                     else{
                         message.channel.send("Mal")
                     }
                     break;
                 case '3️⃣':
                     if(respuesta3 === respuestaCorrecta)
-                        message.channel.send(`Bien 3  ${timeTaken}`)
+                        message.channel.send(`Bien 3  ${timeTaken} ${user.tag}`)
                     else{
                         message.channel.send("Mal")
                     }
                     break;
                 case '4️⃣':
                     if(respuesta4 === respuestaCorrecta)
-                        message.channel.send(`Bien 4  ${timeTaken}`)
+                        message.channel.send(`Bien 4  ${timeTaken} ${user.tag}`)
                     else{
                         message.channel.send("Mal")
                     }
@@ -140,7 +138,7 @@ client.on("messageCreate", async function(message) {
         const timeTaken = Date.now() - message.createdTimestamp;
         
         //Con el metodo reply, responde al usuario que haya escrito el comando
-        message.channel.send(`Pong! This message had a latency of ${timeTaken}ms.`);
+        //message.channel.send(`Pong! This message had a latency of ${timeTaken}ms.`);
 
     }  
 
