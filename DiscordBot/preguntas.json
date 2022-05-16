@@ -1,0 +1,22 @@
+{
+    "preguntas": [
+        {
+            "pregunta": "Quien es quien1?",
+            "imagen": "https://www.geekmi.news/__export/1644190196029/sites/debate/img/2022/02/06/zenitsu4.jpg_976912859.jpg",
+            "respuestaCorrecta": "Si",
+            "respuestas": ["Si", "No", "Hol", "Aasdasd" ]
+        },
+        {
+            "pregunta": "Quien es yo2?",
+            "imagen": "https://esports.as.com/2019/08/22/league-of-legends/tacticas-maestras--tft/Aatrox-Buff_1275182479_245676_1440x810.jpg",
+            "respuestaCorrecta": "Si",
+            "respuestas": ["Si", "No", "Hol", "Aasdasd" ]
+        },
+        {
+            "pregunta": "Quien es quienasd3?",
+            "imagen": "https://areajugones.sport.es/wp-content/uploads/2021/05/imagen-2021-05-22-135309.jpg",
+            "respuestaCorrecta": "Si",
+            "respuestas": ["Si", "No", "Hol", "Aasdasd" ]
+        }
+    ]
+}
