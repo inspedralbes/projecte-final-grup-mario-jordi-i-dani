@@ -45,6 +45,7 @@ client.on("messageCreate", async function(message) {
     //Comprobamos si la constante command coincide con el valor ping, si coincide procede a ejecutar el codigo.
     if (command === "ping") {
 
+      const jugadores = [];  
       const i = Math.floor(Math.random() * 3);
       const nombre = preguntas.preguntas[i].pregunta;
       const array = preguntas.preguntas[i].respuestas;
@@ -98,32 +99,49 @@ client.on("messageCreate", async function(message) {
             switch(reaction.emoji.name){
                 
                 case '1️⃣':
-                    if(respuesta1 === respuestaCorrecta)
-                        message.channel.send(`Respuesta 1 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
-                    else{
-                        message.channel.send(`Respuesta 1 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken}`)
+                    if(respuesta1 === respuestaCorrecta){
+                        message.channel.send(`Respuesta 1 CORRECTA Collected ${reaction.emoji.name} from ${user.tag}`);
+                        jugadores.push(user.tag);
+                        jugadores.forEach(element => {
+                            message.channel.send(element);
+                        });
+                        
+                    }else{
+                        message.channel.send(`Respuesta 1 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} `)
                     }
                     
                     break;
                 case '2️⃣':
-                    if(respuesta2 === respuestaCorrecta)
-                        message.channel.send(`Respuesta 2 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
-                    else{
-                        message.channel.send(`Respuesta 2 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
+                    if(respuesta2 === respuestaCorrecta){
+                        message.channel.send(`Respuesta 2 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} `)
+                        jugadores.push(user.tag);
+                        jugadores.forEach(element => {
+                            message.channel.send(element);
+                        });
+                    }else{
+                        message.channel.send(`Respuesta 2 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} `)
                     }
                     break;
                 case '3️⃣':
-                    if(respuesta3 === respuestaCorrecta)
-                        message.channel.send(`Respuesta 3 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
-                    else{
-                        message.channel.send(`Respuesta 3 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
+                    if(respuesta3 === respuestaCorrecta){
+                        message.channel.send(`Respuesta 3 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} `)
+                        jugadores.push(user.tag);
+                        jugadores.forEach(element => {
+                            message.channel.send(element);
+                        });
+                    }else{
+                        message.channel.send(`Respuesta 3 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} `)
                     }
                     break;
                 case '4️⃣':
-                    if(respuesta4 === respuestaCorrecta)
-                        message.channel.send(`Respuesta 4 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
-                    else{
-                        message.channel.send(`Respuesta 4 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag} en ${timeTaken} ms`)
+                    if(respuesta4 === respuestaCorrecta){
+                        message.channel.send(`Respuesta 4 CORRECTA Collected ${reaction.emoji.name} from ${user.tag} `)
+                        jugadores.push(user.tag);
+                        jugadores.forEach(element => {
+                            message.channel.send(element);
+                        });
+                    }else{
+                        message.channel.send(`Respuesta 4 INCORRECTA Collected ${reaction.emoji.name} from ${user.tag}`)
                     }
                     break;
             }
@@ -135,7 +153,7 @@ client.on("messageCreate", async function(message) {
         });
 
         //Aqui a partir de la fecha actual y cuando se creo el mensaje, calculamos lo que tarda en mandar el bot su mensaje en milisegundos
-        const timeTaken = Date.now() - message.createdTimestamp;
+        //const timeTaken = message.createdTimestamp - sentEmbed.createdTimestamp;
         
         //Con el metodo reply, responde al usuario que haya escrito el comando
         //message.channel.send(`Pong! This message had a latency of ${timeTaken}ms.`);
