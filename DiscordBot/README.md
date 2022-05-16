@@ -1,2 +1,0 @@
-# botclase
-botclase
