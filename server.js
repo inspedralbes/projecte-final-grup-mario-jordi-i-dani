@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 app.use('/preguntas', PreguntaRouter);
-app.use('/respuestas', RespuestaRouter)
+app.use('/respuestas', RespuestaRouter);
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname,'public', 'index.html'));

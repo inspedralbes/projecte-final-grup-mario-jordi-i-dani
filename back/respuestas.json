@@ -1,0 +1,19 @@
+{"respuestas": [
+    {
+        "usertag": "jordi#3333",
+        "tiempo": "450ms",
+        "puntuacion":"90"
+    },
+	{
+        "usertag": "dani#4444",
+        "tiempo": "150ms",
+        "puntuacion":"100"
+    },
+     {
+        "usertag": "mario#5555",
+        "tiempo": "1ms",
+        "puntuacion":"10000"
+    }
+
+]
+}

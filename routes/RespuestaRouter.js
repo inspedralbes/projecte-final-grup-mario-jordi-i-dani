@@ -9,13 +9,13 @@ RespuestaRouter.route('/').get(function (req, res) {
       console.log(err);
     }
     else {
-      res.render('index', {respuestas: respuestas});
+      res.render('respuestaIndex', {respuestas: respuestas});
     }
   });
 });
 
-RespuestaRouter.route('/anadir').get(function(req,res){
-  res.render('anadir');
+RespuestaRouter.route('/respuestaAnadir').get(function(req,res){
+  res.render('respuestaAnadir');
 });
 
 RespuestaRouter.route('/post').post(function (req, res) {
@@ -42,7 +42,7 @@ RespuestaRouter.route('/update/:id').post(function (req, res) {
     if (!respuesta)
       return next(new Error('Could not load Document'));
     else {
-      respuesta.tag = req.body.tag;
+      respuesta.usertag = req.body.usertag;
       respuesta.puntuacion = req.body.puntuacion;
 
       respuesta.save().then(respuesta => {

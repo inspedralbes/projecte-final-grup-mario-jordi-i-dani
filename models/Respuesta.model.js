@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const Respuesta = new Schema({
-  tag: {
+  usertag: {
       type: String
   },
   tiempo: {
