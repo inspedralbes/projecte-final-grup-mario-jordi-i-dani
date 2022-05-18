@@ -18,6 +18,10 @@ RespuestaRouter.route('/respuestaAnadir').get(function(req,res){
   res.render('respuestaAnadir');
 });
 
+RespuestaRouter.route('/scoreboard').get(function(req,res){
+  res.render('scoreboard');
+});
+
 RespuestaRouter.route('/post').post(function (req, res) {
    const respuesta = new Respuesta(req.body);
    console.log(respuesta);

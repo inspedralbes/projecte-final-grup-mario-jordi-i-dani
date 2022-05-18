@@ -32,5 +32,14 @@
             </tbody>
         </table>
     </div>
+    <script>
+        respuestas.sort((a,b) =>{
+            return a.puntuacion - b.puntuacion;
+        });
+
+        respuestas.forEach((e) =>{
+            console.log(`${e.usertag} ${e.timepo} ${e.puntuacion}`);
+        });
+    </script>
 </body>
 </html>
