@@ -16,10 +16,12 @@
           <tr>
             <td><b>Preguntas</b></td>
             <td><b>Imagen</b></td>
+            <td><b>Temática</b></td>
             <td><b>Respuesta Correcta</b></td>
-            <td><b>Respuesta Incorrecta 1</b></td>
-            <td><b>Respuesta Incorrecta 2</b></td>
-            <td><b>Respuesta Incorrecta 3</b></td>
+            <td><b>Respuesta 1</b></td>
+            <td><b>Respuesta 2</b></td>
+            <td><b>Respuesta 3</b></td>
+            <td><b>Respuesta 4</b></td>
             <td colspan="2"><b>Action</b></td>
           </tr>
         </thead>
@@ -28,6 +30,8 @@
           <tr>
             <td><%= preguntas[i].pregunta %></td>
             <td><%= preguntas[i].imagen %></td>
+            <td><%= preguntas[i].tema %></td>
+            <td><%= preguntas[i].rc %></td>
             <td><%= preguntas[i].respuestas[0] %></td>
             <td><%= preguntas[i].respuestas[1] %></td>
             <td><%= preguntas[i].respuestas[2] %></td>

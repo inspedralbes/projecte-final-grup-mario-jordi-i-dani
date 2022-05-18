@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/preguntasBotDiscord')
+mongoose.connect('mongodb+srv://a20jorcatace:Institut124@cluster1.gkwwj.mongodb.net/preguntaBot?retryWrites=true&w=majority')
 
 const PreguntaRouter = require('./routes/PreguntaRouter');
 

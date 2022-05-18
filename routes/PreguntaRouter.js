@@ -43,10 +43,13 @@ PreguntaRouter.route('/update/:id').post(function (req, res) {
       return next(new Error('Could not load Document'));
     else {
       pregunta.pregunta = req.body.pregunta;
+      pregunta.imagen = req.body.imagen;
+      pregunta.tema = req.body.tema;
       pregunta.rc = req.body.rc;
-      pregunta.ri1 = req.body.ri1;
-      pregunta.ri2 = req.body.ri2;
-      pregunta.ri3 = req.body.ri3;
+      pregunta.respuestas[0] = req.body.respuestas[0];
+      pregunta.respuestas[1] = req.body.respuestas[1];
+      pregunta.respuestas[2] = req.body.respuestas[2];
+      pregunta.respuestas[3] = req.body.respuestas[3];
 
       pregunta.save().then(pregunta => {
           res.redirect('/preguntas');

@@ -8,6 +8,9 @@ const Pregunta = new Schema({
   imagen: {
       type: String
   },
+  tema: {
+    type: String
+  }, 
   rc: {
     type: String
   },
