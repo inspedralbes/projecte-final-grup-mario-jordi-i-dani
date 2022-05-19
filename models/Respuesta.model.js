@@ -9,7 +9,7 @@ const Respuesta = new Schema({
       type: String
   },
   puntuacion: {
-    type: String
+    type: Number
   }, 
 },{
     collection: 'respuestas'

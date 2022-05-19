@@ -4,7 +4,17 @@ const RespuestaRouter = express.Router();
 const Respuesta = require('../models/Respuesta.model');
 
 RespuestaRouter.route('/').get(function (req, res) {
-  Respuesta.find(function (err, respuestas){
+  /*Respuesta.find(function (err, respuestas){
+    if(err){
+      console.log(err);
+    }
+    else {
+      res.render('respuestaIndex', {respuestas: respuestas});
+    }
+  });*/
+
+  var criterio = { puntuacion: -1 };
+  Respuesta.find().sort(criterio).exec(function (err, respuestas){
     if(err){
       console.log(err);
     }

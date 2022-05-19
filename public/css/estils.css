@@ -29,3 +29,6 @@ html{
 td{
     text-align: center;
 }
+a:hover{
+    color: black;
+}
