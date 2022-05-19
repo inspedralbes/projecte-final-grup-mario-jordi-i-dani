@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const host = '0.0.0.0';
 const port = 3000;
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -24,6 +25,6 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname,'public', 'index.html'));
  });
 
-app.listen(port, function() {
+app.listen(port, host, function() {
     console.log('listening on 3000')
 });

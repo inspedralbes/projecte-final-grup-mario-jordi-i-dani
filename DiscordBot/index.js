@@ -3,6 +3,20 @@ const Discord = require("discord.js");
 const config = require("./config.json");
 const fetch = require("node-fetch");
 const preguntas = require("./preguntas.json");
+require("dotenv").config();
+const mongoose = require('mongoose');
+const User = require('./schemas/UserSchema');
+
+
+mongoose
+    .connect(process.env.MONGODB_URI, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
+    .then((m)=>{
+        console.log("Connected to DB");
+    }).catch((err)=> console.log(err));
+
 
 
 //Para poder mandar imagenes
@@ -56,8 +70,8 @@ client.on("messageCreate", async function(message) {
       .map(({ value }) => value)
 
         //fetch prueba
-        //const response = await fetch("https://opentdb.com/api.php?amount=1&type=multiple");
-        //const data = await response.json();
+        const response = await fetch("https://opentdb.com/api.php?amount=2&category=17&difficulty=easy&type=boolean");
+        const data = await response.json();
       
         const respuestaCorrecta = preguntas.preguntas[i].respuestaCorrecta;
         const respuesta1 = shuffled[0];
@@ -66,7 +80,7 @@ client.on("messageCreate", async function(message) {
         const respuesta4 = shuffled[3];
         console.log(preguntas.preguntas)
         //console.log(nombre)
-        //console.log(data)
+        console.log(data)
         //console.log(data.results[0].incorrect_answers)
 
         const exampleEmbed = new MessageEmbed()
@@ -162,4 +176,11 @@ client.on("messageCreate", async function(message) {
 
 });
 
-client.login(config.BOT_TOKEN);
+client.on('messageCreate', async (message) => {
+    const newUser = await User.create({
+        username: message.author.username,
+        discordId: message.author.id
+    });
+});
+
+client.login(process.env.DISCORD_BOT_TOKEN);
