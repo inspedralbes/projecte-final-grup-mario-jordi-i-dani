@@ -26,3 +26,6 @@ html{
 .bread{
     color: white;
 }
+td{
+    text-align: center;
+}
