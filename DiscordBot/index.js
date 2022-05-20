@@ -32,6 +32,7 @@ const prefix = "!";
 
 const imagenes = ["https://www.geekmi.news/__export/1644190196029/sites/debate/img/2022/02/06/zenitsu4.jpg_976912859.jpg","https://esports.as.com/2019/08/22/league-of-legends/tacticas-maestras--tft/Aatrox-Buff_1275182479_245676_1440x810.jpg", "https://areajugones.sport.es/wp-content/uploads/2021/05/imagen-2021-05-22-135309.jpg"]
 
+const jugadores = []; 
 
 //El metodo .on, hace que discord nos envie una notificacion sobre los eventos nuevos, recibe 2 parametros
 //el nombre del evento, y la funcion a realizar cuando pasa dicho evento
@@ -58,7 +59,7 @@ client.on("messageCreate", async function(message) {
     //Comprobamos si la constante command coincide con el valor ping, si coincide procede a ejecutar el codigo.
     if (command === "ping") {
 
-      const jugadores = [];  
+       
       const i = Math.floor(Math.random() * 3);
       const nombre = preguntas.preguntas[i].pregunta;
       const array = preguntas.preguntas[i].respuestas;
