@@ -1,6 +1,5 @@
 //Dependencias
 const Discord = require("discord.js");
-const config = require("./config.json");
 const fetch = require("node-fetch");
 const preguntas = require("./preguntas.json");
 require("dotenv").config();

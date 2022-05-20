@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const host = '0.0.0.0';
-const port = 3000;
+const port = 7005;
 const path = require('path');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -26,5 +26,5 @@ app.get('/', function (req, res) {
  });
 
 app.listen(port, host, function() {
-    console.log('listening on 3000')
+    console.log('listening on 7005')
 });
