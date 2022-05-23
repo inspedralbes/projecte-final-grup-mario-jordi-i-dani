@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb+srv://a20jorcatace:Institut124@cluster1.gkwwj.mongodb.net/preguntaBot?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://marsolluc:Institut124@finalproject.ven8w.mongodb.net/discordBot?retryWrites=true&w=majority')
 
 const PreguntaRouter = require('./routes/PreguntaRouter');
 const RespuestaRouter = require('./routes/RespuestaRouter');
