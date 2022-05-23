@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const discord = require("discord.js");   //desestructuracion del paquete de discord para coger solo client e intents
 const client = new discord.Client({                         //constante donde se guarda el nuevo cliente
-    intents:["GUILDS", "GUILD_MESSAGES","GUILD_MEMBERS"],    //lo necesario para guardar una nueva conexión
+    intents: ['GUILD_VOICE_STATES', 'GUILD_MESSAGES', 'GUILDS', 'GUILD_MESSAGE_REACTIONS', 'GUILD_MEMBERS'],    //lo necesario para guardar una nueva conexión
 });
 
 
