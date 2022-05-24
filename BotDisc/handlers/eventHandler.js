@@ -1,5 +1,5 @@
 const fs = require("fs");
-
+                                                                            //este es el handler de eventos, igual que el de comandos pero para eventos
 module.exports = (client,discord) => {
     console.log("------------------EVENTOS------------------");
     //CODIGO
@@ -12,11 +12,11 @@ module.exports = (client,discord) => {
             try {
                 let evn = require(`../events/${dir}/${file}`);
 
-                if(evn.event && typeof evn.event !== "string"){
+                if(evn.event && typeof evn.event !== "string"){             //si el tipo del evento es diferente de STRING da un error
                     console.log(`Error: ${file}`);
                     continue;
                 }
-                evn.event = evn.event || file.replace(".js", "");
+                evn.event = evn.event || file.replace(".js", "");           //quita la extension al evento
 
                 client.on(evn.event, evn.bind(null, client, discord));
                 console.log(`Evento cargado: ${file}`);
