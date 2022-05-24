@@ -1,11 +1,11 @@
-# H1 Instalación npm
+# Instalación npm
 
 **Entrar en la carpeta principal y hacer npm install para que instale todas las dependencias del package.json**
 **Entrar en la carpeta del bot y hacer npm install para que instale todas las dependencias del package.json**
 
 ---
 
-# H1 Desplegament
+# Desplegament
 
 **Entrar en heroku, crear una nueva aplicación**
 **En el apartado deploy seguir los pasos del apartado Heroku git usando heroku cli**
