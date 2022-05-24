@@ -10,9 +10,8 @@
 
 ## URL Producció: http://quizbot.alumnes.inspedralbes.cat:7005/
 
-# Aquest fitxer ha de contenir com a mínim:
  * Jordi Catasús, Dani Pozo, Mario Solazzi
- * QuizBot Discord
- * Un bot de Discord para hacer un Quiz con preguntas para los amigos, junto con otras funcionalidades
+ * Bot Discord
+ * Un bot de Discord con diversas funcionalidades
  * http://quizbot.alumnes.inspedralbes.cat:7005/
- * Estat: en procés
+ * Estat: Hecho
