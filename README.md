@@ -10,6 +10,10 @@
 
 ## URL Producció: http://quizbot.alumnes.inspedralbes.cat:7005/
 
+---
+
+ *Bot documentado en el código
+
  * Jordi Catasús, Dani Pozo, Mario Solazzi
  * Bot Discord
  * Un bot de Discord con diversas funcionalidades
