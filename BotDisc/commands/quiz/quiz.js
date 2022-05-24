@@ -12,9 +12,9 @@ module.exports = { //module exports son las instrucciones que le dicen a node qu
 
 
 
-        const response = await fetch('https://opentdb.com/api.php?amount=5&type=boolean');
+        const response = await fetch('https://opentdb.com/api.php?amount=1&type=boolean');
         const data = await response.json();
-        console.log('DATOS DEL FETCH',data);
+        console.log('DATOS DEL FETCH',data.results);
         
         var length = data.results.length;
         var randomNumber = Math.floor(Math.random() * length);
@@ -27,9 +27,9 @@ module.exports = { //module exports son las instrucciones que le dicen a node qu
         const answer = await message.channel.awaitMessages(filter, {maxMatches: 1, time: 10000, errors: ['time','maxMatches']});
         const ans = answer.first();
         if(ans.content.toLowerCase() === correctAnswer.toLowerCase()){
-            message.channel.send("¡CORRECTO!")
+            message.channel.send("Correcto!!!")
         } else{
-            message.channel.send("¡INCORRECTO!")
+            message.channel.send("Falso!!!")
         }
     },
   };

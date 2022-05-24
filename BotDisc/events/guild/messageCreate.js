@@ -6,7 +6,7 @@ const userModel = require ("../../models/userSchema");
 //END modelos
 
 module.exports = async (client,discord, message) => {
-    console.log( message);
+    //console.log( message);
 
     if(message.author.bot)      //comprueba si es un bot quien ha mandado el msg
     return console.log(`Mensaje del bot: ${message.author.username}`);
