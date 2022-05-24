@@ -45,14 +45,47 @@
         <h3>¿Qué funcionalidades tienes el bot?</h3>
         <br>
         <p>No solo puedes participar en las preguntas si no que también puedes crearlas y editarlas como tu quieras. Puedes escoger entre cualquier temática que se te ocurra y cualquier cantidad de preguntas siempre y cuando estén creadas.</p>
+        <p>A parte de eso, es un bot en el que puedes poner música para escuchar algo de fondo mientras juegas, y puedes interactuar con los amigos de manera que si uno lo ve oportuno puede banear a alguien, o simplemente enviarle un mensaje importante.</p>
       </section>
       <br>
       <section>
         <h4>¿Cuales són los comandos que se pueden utilizar?</h4>
         <br>
         <ul>
-          <li>!ping</li>
-          <li>!quiz</li>
+          <li>
+            !play o /play + nombre de cancion o autor o ambas
+            - Reproduce una canción en el canal de voz en el que estás.</li>
+          <li>
+            !pause o /pause -
+            Para la canción en el canal de voz en el que estás.</li>
+          <li>
+            !resumen o /resumen -
+            Vuelve a reproducir la canción en el canal de voz en el que estás.
+          </li>
+          <li>
+            /ban + nombre + motivo -
+            Si tienes un rol con permisos de baneo te deja banear a alguien y manda un mensaje al canal de logs con la persona baneada y su id.
+          </li>
+          <li>
+            /unban + id -
+            Si tienes un rol con permisos de baneo te deja desbanear a alguien y manda un mensaje al canal de logs con la persona desbaneada y su id.
+          </li>
+          <li>
+            /mencion + nombre -
+            Te deja mencionar a alguien y le manda una notificación
+          </li>
+          <li>
+            !menu -
+            Muestra un menú con opciones seleccionables, algunas de estas tienen como respuesta media attachments, solo es una prueba
+          </li>
+          <li>
+            !reglas -
+            Muestra las 'reglas' del canal y dos botones, si aceptas te deja segui tranquilamente, si no aceptas te expulsa del canal
+          </li>
+          <li>
+            !clear + número de mensajes o !del + número de mensajes
+            Te permite borrar mensajes en el canal de texto que lo usas, un máximo de 99
+          </li>
         </ul>
       </section>
    </main>
