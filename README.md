@@ -6,6 +6,10 @@
  * https://trello.com/b/J0Mu6eDM/discord-bot
 
 
+---
+
+## URL Producció: http://quizbot.alumnes.inspedralbes.cat:7005/
+
 # Aquest fitxer ha de contenir com a mínim:
  * Jordi Catasús, Dani Pozo, Mario Solazzi
  * QuizBot Discord
