@@ -7,8 +7,8 @@
 
 
 # Aquest fitxer ha de contenir com a mínim:
- * Nom dels integrants
- * Nom del projecte
- * Petita descripció
- * URL de producció (quan la tingueu)
- * Estat: (explicació de en quin punt està)
+ * Jordi Catasús, Dani Pozo, Mario Solazzi
+ * QuizBot Discord
+ * Un bot de Discord para hacer un Quiz con preguntas para los amigos, junto con otras funcionalidades
+ * http://quizbot.alumnes.inspedralbes.cat:7005/
+ * Estat: en procés
