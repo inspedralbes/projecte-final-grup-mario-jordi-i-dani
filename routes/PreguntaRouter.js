@@ -14,6 +14,20 @@ PreguntaRouter.route('/').get(function (req, res) {
   });
 });
 
+//DEVUELVE JSON
+
+PreguntaRouter.route('/api').get(function (req, res) {
+  Pregunta.find(function (err, preguntas){
+    if(err){
+      console.log(err);
+    }
+    else {
+      res.json({preguntas: preguntas});
+    }
+  });
+});
+
+
 PreguntaRouter.route('/anadir').get(function(req,res){
   res.render('anadir');
 });
